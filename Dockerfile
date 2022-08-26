@@ -6,4 +6,4 @@ COPY ${FROM_JAR} app.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-XX:MaxRAM=256M", "-Xmx128M", "-Xss256k", "-gXms128M", "-jar","app.jar"]
+ENTRYPOINT ["java", "-jar","app.jar"]
